@@ -44,7 +44,7 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <div className="relative h-14 sm:h-16 aspect-[300/72] flex-shrink-0">
               <Image
-                src={logo.horizontalUrl}
+                src="/logo-footer-arboville-2.svg"
                 alt={`${dadosCliente.nome} - ${logo.subtexto}`}
                 fill
                 className="object-contain object-left"
