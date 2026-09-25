@@ -13,7 +13,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="w-full bg-[#1B2416] text-white text-xs pt-12">
+    <footer className="w-full bg-[#596020] text-white text-xs pt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation Link Columns */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 pb-12 border-b border-stone-700/50">

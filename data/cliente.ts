@@ -185,7 +185,7 @@ export const dadosCliente: DadosCliente = {
     mutedBg: "#F3F4F1",
     textPrimary: "#1F2937", // Cinza chumbo escuro para leitura confortável
     textSecondary: "#4B5563", // Cinza médio
-    footerBg: "#1B2416",
+    footerBg: "#596020",
     footerBottomBg: "#12190E",
   },
   localizacao: {
