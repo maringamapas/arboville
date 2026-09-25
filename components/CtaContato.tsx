@@ -6,7 +6,7 @@ export function CtaContato() {
   const { ctaContato, contato, localizacao } = dadosCliente;
 
   return (
-    <section id="contato" className="relative w-full py-16 md:py-24 bg-[#1E2A16] text-white overflow-hidden">
+    <section id="contato" className="relative w-full py-16 md:py-24 bg-[#596020] text-white overflow-hidden">
       {/* Background with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -14,13 +14,13 @@ export function CtaContato() {
           backgroundImage: `url(${ctaContato.imagemFundo})`,
         }}
       >
-        <div className="absolute inset-0 bg-[#1E2A16]/50" />
+        <div className="absolute inset-0 bg-[#596020]/50" />
       </div>
 
       {/* Centered Slate/Olive Box */}
       <div className="relative max-w-2xl mx-auto px-4 sm:px-6 z-10">
-        <div className="bg-[#1B2416]/95 backdrop-blur-sm p-6 sm:p-10 md:p-12 text-center shadow-2xl border-t-4 border-[#445922]">
-          <span className="text-xs font-bold text-[#E27412] uppercase tracking-widest block mb-2">
+        <div className="bg-[#2B2A28]/95 backdrop-blur-sm p-6 sm:p-10 md:p-12 text-center shadow-2xl border-t-4 border-[#596020]">
+          <span className="text-xs font-bold text-[#E67F12] uppercase tracking-widest block mb-2">
             Atendimento Rápido • {localizacao.cidade}/{localizacao.estado}
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 whitespace-pre-line">
@@ -34,11 +34,11 @@ export function CtaContato() {
           {/* Quick contact pills */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-xs text-stone-200 mb-8">
             <div className="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded">
-              <Phone className="w-3.5 h-3.5 text-[#E27412]" />
+              <Phone className="w-3.5 h-3.5 text-[#E67F12]" />
               <span>{contato.telefoneFormatado}</span>
             </div>
             <div className="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded">
-              <MapPin className="w-3.5 h-3.5 text-[#E27412]" />
+              <MapPin className="w-3.5 h-3.5 text-[#E67F12]" />
               <span>{localizacao.endereco}, {localizacao.cidade}/{localizacao.estado}</span>
             </div>
           </div>
@@ -48,7 +48,7 @@ export function CtaContato() {
               href={ctaContato.botaoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#E27412] hover:bg-[#C86109] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-3.5 transition-colors shadow-md"
+              className="inline-flex items-center justify-center gap-2 bg-[#E67F12] hover:bg-[#B9650E] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-3.5 transition-colors shadow-md"
             >
               <MessageCircle className="w-4 h-4" />
               <span>{ctaContato.botaoTexto}</span>

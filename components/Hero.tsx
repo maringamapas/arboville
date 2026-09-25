@@ -5,7 +5,7 @@ export function Hero() {
   const { hero } = dadosCliente;
 
   return (
-    <section className="relative w-full min-h-[calc(100svh-88px)] lg:min-h-[calc(100svh-188px)] bg-[#1E2A16] overflow-hidden flex items-center">
+    <section className="relative w-full min-h-[calc(100svh-88px)] lg:min-h-[calc(100svh-188px)] bg-[#596020] overflow-hidden flex items-center">
       {/* Background Image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center sm:bg-[center_top_30%] bg-no-repeat transition-all duration-700"
@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       {/* Subtle brand geometric accent in corner */}
-      <div className="absolute top-0 right-0 w-40 h-40 bg-[#445922]/20 rounded-bl-full pointer-events-none" />
+      <div className="absolute top-0 right-0 w-40 h-40 bg-[#596020]/20 rounded-bl-full pointer-events-none" />
 
       {/* Floating Card Content centered */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 sm:py-16 flex justify-center items-center">
@@ -37,7 +37,7 @@ export function Hero() {
               href={hero.botaoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#E27412] hover:bg-[#C86109] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-none transition-colors shadow-lg hover:shadow-xl drop-shadow-md"
+              className="inline-block bg-[#E67F12] hover:bg-[#B9650E] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-none transition-colors shadow-lg hover:shadow-xl drop-shadow-md"
             >
               {hero.botaoTexto}
             </Link>

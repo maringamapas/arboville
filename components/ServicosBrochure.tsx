@@ -34,28 +34,28 @@ export function ServicosBrochure() {
   return (
     <section
       id="catalogo-servicos"
-      className="w-full border-t-4 border-[#5C722D] bg-[#FAFAF9] py-16 sm:py-20 lg:py-28 overflow-hidden relative scroll-mt-28"
+      className="w-full border-t-4 border-[#596020] bg-[#F5F4EB] py-16 sm:py-20 lg:py-28 overflow-hidden relative scroll-mt-28"
     >
       {/* Elementos decorativos de fundo geométricos inspirados no template */}
-      <div className="absolute top-12 left-[-100px] w-72 h-72 rounded-full bg-[#84CC16]/10 blur-2xl pointer-events-none" />
-      <div className="absolute top-1/3 right-[-80px] w-96 h-96 rounded-full bg-[#445922]/10 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-[#E27412]/10 blur-2xl pointer-events-none" />
+      <div className="absolute top-12 left-[-100px] w-72 h-72 rounded-full bg-[#596020]/10 blur-2xl pointer-events-none" />
+      <div className="absolute top-1/3 right-[-80px] w-96 h-96 rounded-full bg-[#596020]/10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-[#E67F12]/10 blur-2xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Cabeçalho da Seção */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-18">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#445922]/10 border border-[#445922]/20 mb-4">
-            <Sparkles className="w-4 h-4 text-[#445922]" />
-            <span className="text-xs font-bold tracking-wider text-[#445922] uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#596020]/10 border border-[#596020]/20 mb-4">
+            <Sparkles className="w-4 h-4 text-[#596020]" />
+            <span className="text-xs font-bold tracking-wider text-[#596020] uppercase">
               {servicosBrochure.tagSuperior}
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1F2937] tracking-tight leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B2A28] tracking-tight leading-tight mb-4">
             {servicosBrochure.titulo}
           </h2>
 
-          <p className="text-base sm:text-lg text-[#4B5563] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#2B2A28] leading-relaxed">
             {servicosBrochure.subtitulo}
           </p>
 
@@ -65,9 +65,9 @@ export function ServicosBrochure() {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white border border-stone-200 text-xs sm:text-sm font-semibold text-[#1F2937] hover:border-[#445922] hover:text-[#445922] hover:bg-[#445922]/5 transition-all shadow-xs"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white border border-stone-200 text-xs sm:text-sm font-semibold text-[#2B2A28] hover:border-[#596020] hover:text-[#596020] hover:bg-[#596020]/5 transition-all shadow-xs"
               >
-                <span className="w-5 h-5 rounded-full bg-[#84CC16] text-[#1E2A16] flex items-center justify-center text-[10px] font-black">
+                <span className="w-5 h-5 rounded-full bg-[#596020] text-[#1E2A16] flex items-center justify-center text-[10px] font-black">
                   {item.numero}
                 </span>
                 <span>{item.titulo}</span>
@@ -104,7 +104,7 @@ export function ServicosBrochure() {
                   >
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                       {/* Círculo decorativo de fundo / Lime Accent */}
-                      <div className="absolute -top-4 -left-4 w-44 h-44 sm:w-56 sm:h-56 rounded-full bg-[#84CC16] opacity-90 -z-10" />
+                      <div className="absolute -top-4 -left-4 w-44 h-44 sm:w-56 sm:h-56 rounded-full bg-[#596020] opacity-90 -z-10" />
 
                       {/* Círculo decorativo secundário cinza / neutro */}
                       <div className="absolute -bottom-6 -right-6 w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-stone-200/90 -z-10" />
@@ -122,14 +122,14 @@ export function ServicosBrochure() {
                       </div>
 
                       {/* Badge do Número (01..06) */}
-                      <div className="absolute -top-2 right-4 sm:top-2 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#445922] text-white flex items-center justify-center shadow-lg border-2 border-white z-20">
+                      <div className="absolute -top-2 right-4 sm:top-2 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#596020] text-white flex items-center justify-center shadow-lg border-2 border-white z-20">
                         <span className="text-xl sm:text-2xl font-black leading-none text-white tracking-tight">
                           {servico.numero}
                         </span>
                       </div>
 
                       {/* Ícone flutuante do serviço */}
-                      <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#E27412] flex items-center justify-center shadow-md border-2 border-white z-20">
+                      <div className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#E67F12] flex items-center justify-center shadow-md border-2 border-white z-20">
                         {iconesServicos[servico.icone] || (
                           <Trees className="w-6 h-6 text-white" />
                         )}
@@ -144,42 +144,42 @@ export function ServicosBrochure() {
                     }`}
                   >
                     {/* Badge da Categoria */}
-                    <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-[#84CC16]/20 border border-[#84CC16]/40 mb-3">
-                      <span className="w-2 h-2 rounded-full bg-[#445922]" />
-                      <span className="text-xs font-bold text-[#445922] uppercase tracking-wide">
+                    <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-[#596020]/20 border border-[#596020]/40 mb-3">
+                      <span className="w-2 h-2 rounded-full bg-[#596020]" />
+                      <span className="text-xs font-bold text-[#596020] uppercase tracking-wide">
                         {servico.badge}
                       </span>
                     </div>
 
                     {/* Título Principal */}
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1F2937] tracking-tight mb-3">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#2B2A28] tracking-tight mb-3">
                       {servico.titulo}
                     </h3>
 
                     {/* Subtítulo / Lead em destaque */}
-                    <div className="p-4 rounded-xl bg-[#445922]/5 border-l-4 border-[#445922] mb-4">
-                      <p className="text-sm sm:text-base font-semibold text-[#1F2937] leading-relaxed">
+                    <div className="p-4 rounded-xl bg-[#596020]/5 border-l-4 border-[#596020] mb-4">
+                      <p className="text-sm sm:text-base font-semibold text-[#2B2A28] leading-relaxed">
                         {servico.subtitulo}
                       </p>
                     </div>
 
                     {/* Descrição Técnica */}
-                    <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed mb-6 whitespace-pre-line">
+                    <p className="text-sm sm:text-base text-[#2B2A28] leading-relaxed mb-6 whitespace-pre-line">
                       {servico.descricao}
                     </p>
 
                     {/* Diferenciais Técnicos em Grid */}
                     <div className="mb-6">
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#445922] mb-3">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#596020] mb-3">
                         Destaques e Procedimentos Técnicos:
                       </h4>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                         {servico.diferenciais.map((dif, idx) => (
                           <li
                             key={idx}
-                            className="flex items-start gap-2 text-xs sm:text-sm text-[#1F2937]"
+                            className="flex items-start gap-2 text-xs sm:text-sm text-[#2B2A28]"
                           >
-                            <CheckCircle2 className="w-4 h-4 text-[#84CC16] shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-4 h-4 text-[#596020] shrink-0 mt-0.5" />
                             <span>{dif}</span>
                           </li>
                         ))}
@@ -188,7 +188,7 @@ export function ServicosBrochure() {
 
                     {/* Box de Alerta / Risco & Urgência */}
                     <div className="p-4 rounded-xl bg-[#FFFBEB] border border-[#FDE68A] mb-6 flex items-start gap-3">
-                      <AlertTriangle className="w-5 h-5 text-[#E27412] shrink-0 mt-0.5" />
+                      <AlertTriangle className="w-5 h-5 text-[#E67F12] shrink-0 mt-0.5" />
                       <div className="space-y-1">
                         <span className="text-xs font-extrabold text-[#92400E] uppercase tracking-wider block">
                           Atenção & Risco Operacional:
@@ -205,7 +205,7 @@ export function ServicosBrochure() {
                         href={linkWhatsapp}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl bg-[#E27412] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-sm hover:shadow-md text-center"
+                        className="inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-sm hover:shadow-md text-center"
                       >
                         <PhoneCall className="w-4 h-4" />
                         <span>{servico.botaoTexto}</span>
@@ -216,7 +216,7 @@ export function ServicosBrochure() {
                         href={`https://wa.me/${contato.whatsapp.replace(/\D/g, "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-4 py-3.5 rounded-xl bg-white border border-stone-300 hover:border-[#445922] text-xs sm:text-sm font-semibold text-[#1F2937] hover:text-[#445922] transition-colors text-center"
+                        className="inline-flex items-center justify-center px-4 py-3.5 rounded-xl bg-white border border-stone-300 hover:border-[#596020] text-xs sm:text-sm font-semibold text-[#2B2A28] hover:text-[#596020] transition-colors text-center"
                       >
                         Dúvidas Rápidas via WhatsApp
                       </a>
@@ -229,9 +229,9 @@ export function ServicosBrochure() {
         </div>
 
         {/* Rodapé / Banner inferior da seção */}
-        <div className="mt-16 sm:mt-20 p-8 sm:p-10 rounded-3xl bg-linear-to-r from-[#1E2A16] to-[#445922] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="mt-16 sm:mt-20 p-8 sm:p-10 rounded-3xl bg-linear-to-r from-[#1E2A16] to-[#596020] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 text-center md:text-left">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#84CC16]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#596020]">
               Atendimento Técnico Especializado
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold">
@@ -249,7 +249,7 @@ export function ServicosBrochure() {
             )}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E27412] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-lg"
+            className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-lg"
           >
             <PhoneCall className="w-5 h-5" />
             <span>SOLICITAR VISTORIA AGORA</span>

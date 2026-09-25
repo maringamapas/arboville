@@ -175,18 +175,18 @@ export const dadosCliente: DadosCliente = {
     icone: "trees",
   },
   cores: {
-    primary: "#445922", // Verde oliva escuro Arboville (WCAG AA com fundo claro)
-    primaryHover: "#354619",
-    secondary: "#1E2A16", // Verde floresta profundo corporativo
-    accent: "#E27412", // Laranja terroso/dourado vibrante da marca
-    accentHover: "#C86109",
-    darkGreen: "#2B3A15",
-    lightBg: "#FAFAF9", // Branco levemente quente conforme manual
-    mutedBg: "#F3F4F1",
-    textPrimary: "#1F2937", // Cinza chumbo escuro para leitura confortável
-    textSecondary: "#4B5563", // Cinza médio
-    footerBg: "#1B2416",
-    footerBottomBg: "#12190E",
+    primary: "#596020",
+    primaryHover: "#4A501A",
+    secondary: "#2B2A28",
+    accent: "#E67F12",
+    accentHover: "#B9650E",
+    darkGreen: "#596020",
+    lightBg: "#F5F4EB",
+    mutedBg: "#F5F4EB",
+    textPrimary: "#2B2A28",
+    textSecondary: "#2B2A28",
+    footerBg: "#596020",
+    footerBottomBg: "#2B2A28",
   },
   localizacao: {
     cidade: "Joinville",
