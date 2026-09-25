@@ -35,10 +35,10 @@ export function Recursos() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center mb-10 md:mb-14">
-          <span className="text-xs font-bold text-[#E27412] uppercase tracking-widest block mb-1">
+          <span className="text-xs font-bold text-[#E67F12] uppercase tracking-widest block mb-1">
             Conhecimento & Legislação
           </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#445922] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#596020] tracking-tight">
             {recursos.titulo}
           </h2>
         </div>
@@ -48,7 +48,7 @@ export function Recursos() {
           {recursos.cards.map((card) => (
             <div
               key={card.id}
-              className="relative overflow-hidden bg-[#445922] text-white p-6 sm:p-8 flex flex-col justify-between items-center text-center min-h-[300px] sm:min-h-[340px] shadow-lg rounded-sm group"
+              className="relative overflow-hidden bg-[#596020] text-white p-6 sm:p-8 flex flex-col justify-between items-center text-center min-h-[300px] sm:min-h-[340px] shadow-lg rounded-sm group"
             >
               {/* Subtle background image texture */}
               {card.imagemFundo && (

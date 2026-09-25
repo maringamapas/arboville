@@ -26,18 +26,18 @@ export function ServicosGrid() {
   };
 
   return (
-    <section id="servicos" className="w-full bg-[#FAFAF9] py-14 md:py-20 border-b border-stone-200">
+    <section id="servicos" className="w-full bg-[#F5F4EB] py-14 md:py-20 border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-10 md:mb-14">
-          <span className="text-xs font-bold text-[#E27412] uppercase tracking-widest block mb-1">
+          <span className="text-xs font-bold text-[#E67F12] uppercase tracking-widest block mb-1">
             {dadosCliente.nome} • Especialidades
           </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#445922] tracking-tight whitespace-pre-line">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#596020] tracking-tight whitespace-pre-line">
             {servicosGrid.titulo}
           </h2>
           {servicosGrid.subtitulo && (
-            <p className="text-xs sm:text-sm text-[#4B5563] mt-2 max-w-2xl mx-auto whitespace-pre-line">
+            <p className="text-xs sm:text-sm text-[#2B2A28] mt-2 max-w-2xl mx-auto whitespace-pre-line">
               {servicosGrid.subtitulo}
             </p>
           )}
@@ -67,17 +67,17 @@ export function ServicosGrid() {
 
               {/* Top Service Number & Icon Badge */}
               <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
-                <span className="w-7 h-7 rounded-full bg-[#E27412] text-white text-xs font-black flex items-center justify-center shadow-md">
+                <span className="w-7 h-7 rounded-full bg-[#E67F12] text-white text-xs font-black flex items-center justify-center shadow-md">
                   {index + 1}
                 </span>
-                <div className="w-7 h-7 rounded-full bg-[#445922]/90 text-white flex items-center justify-center p-1 backdrop-blur-xs">
+                <div className="w-7 h-7 rounded-full bg-[#596020]/90 text-white flex items-center justify-center p-1 backdrop-blur-xs">
                   {renderServiceIcon(servico.icone)}
                 </div>
               </div>
 
               {/* Floating Green Badge with White Border as seen in reference */}
               <div className="absolute top-4 right-4 sm:top-5 sm:right-5">
-                <div className="bg-[#445922] border border-white/80 px-4 py-1.5 shadow-lg">
+                <div className="bg-[#596020] border border-white/80 px-4 py-1.5 shadow-lg">
                   <span className="text-white text-xs sm:text-sm font-bold tracking-wide block leading-tight">
                     {servico.titulo}
                   </span>
@@ -89,7 +89,7 @@ export function ServicosGrid() {
                 <p className="text-xs text-stone-200 line-clamp-2 mb-2 font-medium">
                   {servico.descricao}
                 </p>
-                <div className="inline-flex items-center gap-1 text-[11px] font-bold text-[#E27412] group-hover:text-amber-300 transition-colors uppercase tracking-wider">
+                <div className="inline-flex items-center gap-1 text-[11px] font-bold text-[#E67F12] group-hover:text-amber-300 transition-colors uppercase tracking-wider">
                   <span>Solicitar Orçamento</span>
                   <span>→</span>
                 </div>

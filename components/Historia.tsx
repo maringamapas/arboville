@@ -11,11 +11,11 @@ export function Historia() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left Text Column */}
           <div className="flex flex-col space-y-6">
-            <span className="text-xs font-bold text-[#E27412] uppercase tracking-widest">
+            <span className="text-xs font-bold text-[#E67F12] uppercase tracking-widest">
               Sobre a {dadosCliente.nome}
             </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#445922] leading-tight whitespace-pre-line">
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#596020] leading-tight whitespace-pre-line">
               {historia.titulo}
             </h2>
 
@@ -25,12 +25,12 @@ export function Historia() {
               </p>
             )}
 
-            <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed whitespace-pre-line">
+            <p className="text-xs sm:text-sm text-[#2B2A28] leading-relaxed whitespace-pre-line">
               {historia.paragrafo1}
             </p>
 
             {historia.paragrafo2 && (
-              <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed whitespace-pre-line">
+              <p className="text-xs sm:text-sm text-[#2B2A28] leading-relaxed whitespace-pre-line">
                 {historia.paragrafo2}
               </p>
             )}
@@ -38,7 +38,7 @@ export function Historia() {
             <div className="pt-2">
               <Link
                 href={historia.botaoLink}
-                className="inline-block bg-[#E27412] hover:bg-[#C86109] text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-none transition-colors shadow-sm"
+                className="inline-block bg-[#E67F12] hover:bg-[#C86109] text-white text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-none transition-colors shadow-sm"
               >
                 {historia.botaoTexto}
               </Link>
