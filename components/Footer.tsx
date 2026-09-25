@@ -90,7 +90,7 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Very Bottom Bar with Legal Links, Copyright and Back to Top Button */
+      {/* Very Bottom Bar with Legal Links, Copyright and Back to Top Button */}
       <div className="bg-[#2B2A28] py-4 border-t border-stone-800/60 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-3 text-center text-[11px] text-stone-400">
           {/* Copyright */}
