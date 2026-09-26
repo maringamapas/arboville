@@ -32,9 +32,10 @@ export function WhatsAppFlutuante() {
   const alinhamento = posicao === "esquerda" ? "left-4 sm:left-6 md:left-8" : "right-4 sm:right-6 md:right-8";
   const tooltip = posicao === "esquerda" ? "left-full ml-3" : "right-full mr-3";
 
+  // bottom-16 keeps the button clear of the footer's back-to-top control (bottom-4 + h-9)
   return (
     <div
-      className={`fixed bottom-4 sm:bottom-6 md:bottom-8 ${alinhamento} z-40 transition-all duration-500 ease-out ${
+      className={`fixed bottom-16 ${alinhamento} z-40 transition-all duration-500 ease-out ${
         visivel ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
       }`}
     >
