@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Servicos2Page() {
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="servicos2-page min-h-screen flex flex-col bg-white">
       {/* 1. Cabeçalho */}
       <Header />
 

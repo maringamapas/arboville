@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+@layer components {
+  .servicos2-page .rounded,
+  .servicos2-page .rounded-sm,
+  .servicos2-page .rounded-md,
+  .servicos2-page .rounded-lg,
+  .servicos2-page .rounded-xl,
+  .servicos2-page .rounded-2xl,
+  .servicos2-page .rounded-3xl,
+  .servicos2-page .rounded-full,
+  .servicos2-page .rounded-t,
+  .servicos2-page .rounded-b,
+  .servicos2-page .rounded-l,
+  .servicos2-page .rounded-r {
+    border-radius: 0 !important;
+  }
+}
+
 @layer base {
   :root {
     --primary: #596020;
