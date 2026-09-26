@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { dadosCliente } from "@/data/cliente";
+import { WhatsAppFlutuante } from "@/components/WhatsAppFlutuante";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={openSans.variable}>
       <body className={`${openSans.className} min-h-screen bg-[#FAFAF9] text-[#1F2937] antialiased flex flex-col font-sans`}>
         {children}
+        <WhatsAppFlutuante />
       </body>
     </html>
   );

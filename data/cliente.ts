@@ -40,6 +40,15 @@ export interface DadosCliente {
     email: string;
     horarioAtendimento?: string;
   };
+  whatsappFlutuante: {
+    ativo: boolean;
+    ariaLabel: string;
+    tooltipTitulo: string;
+    tooltipSubtitulo: string;
+    mensagem: string;
+    posicao: "direita" | "esquerda";
+    exibirAposScroll: number;
+  };
   hero: {
     badge?: string;
     titulo: string;
@@ -217,6 +226,15 @@ export const dadosCliente: DadosCliente = {
     { titulo: "Recursos", href: "#recursos", temDropdown: false },
     { titulo: "Contato", href: "#contato", temDropdown: false },
   ],
+  },
+  whatsappFlutuante: {
+    ativo: true,
+    ariaLabel: "Falar com a Arboville pelo WhatsApp",
+    tooltipTitulo: "Fale com um especialista",
+    tooltipSubtitulo: "Resposta rápida no WhatsApp",
+    mensagem: "Olá! Vim pelo site da Arboville e gostaria de solicitar um orçamento.",
+    posicao: "direita",
+    exibirAposScroll: 0,
   },
   hero: {
     titulo: "Excelência técnica em\nmanejo, poda e cuidados com árvores",
