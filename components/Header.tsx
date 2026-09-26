@@ -72,12 +72,12 @@ export function Header() {
                 value={busca}
                 onChange={(e) => setBusca(e.target.value)}
                 placeholder="Pesquisar serviços..."
-                className="w-full h-10 bg-[#F5F4EB] border border-stone-300 rounded-l px-4 text-sm text-[#2B2A28] placeholder:text-stone-400 focus:outline-none focus:ring-1 focus:ring-[#596020] focus:border-[#596020]"
+                className="w-full h-10 bg-[#F5F4EB] border border-stone-300 px-4 text-sm text-[#2B2A28] placeholder:text-stone-400 focus:outline-none focus:ring-1 focus:ring-[#596020] focus:border-[#596020]"
               />
               <button
                 type="submit"
                 aria-label="Buscar"
-                className="h-10 bg-[#E67F12] hover:bg-[#B9650E] text-white px-3.5 rounded-r flex items-center justify-center transition-colors"
+                className="h-10 bg-[#E67F12] hover:bg-[#B9650E] text-white px-3.5 flex items-center justify-center transition-colors"
               >
                 <Search className="w-4 h-4" />
               </button>
@@ -140,7 +140,7 @@ export function Header() {
             href={dadosCliente.hero.botaoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#E67F12] hover:bg-[#B9650E] text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-sm transition-colors flex items-center gap-1.5 shadow-sm"
+            className="bg-[#E67F12] hover:bg-[#B9650E] text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 transition-colors flex items-center gap-1.5 shadow-sm"
           >
             <MessageCircle className="w-3.5 h-3.5" />
             <span>Orçamento WhatsApp</span>
