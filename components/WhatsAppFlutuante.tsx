@@ -46,11 +46,7 @@ export function WhatsAppFlutuante() {
         aria-label={whatsappFlutuante.ariaLabel}
         className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#E67F12] text-white shadow-lg shadow-black/25 transition-colors duration-200 hover:bg-[#B9650E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2B2A28] focus-visible:ring-offset-2 focus-visible:ring-offset-white md:h-16 md:w-16"
       >
-        <span
-          aria-hidden="true"
-          className="animate-whatsapp-pulse absolute inset-0 rounded-full bg-[#E67F12]"
-        />
-        <IconeWhatsApp className="relative h-7 w-7 md:h-8 md:w-8" />
+        <IconeWhatsApp className="h-7 w-7 md:h-8 md:w-8" />
 
         <span
           className={`pointer-events-none absolute ${tooltip} hidden w-max max-w-[15rem] flex-col gap-0.5 rounded-md bg-[#2B2A28] px-4 py-2.5 text-left opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100 md:flex`}
