@@ -14,7 +14,6 @@ import {
   CheckCircle2,
   AlertTriangle,
   ArrowRight,
-  PhoneCall,
   Sparkles,
 } from "lucide-react";
 
@@ -60,7 +59,7 @@ export function ServicosBrochure() {
           </p>
 
           {/* Navegação Rápida entre os 6 Serviços */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <div className="mt-8 flex min-h-24 flex-wrap items-center justify-center gap-2 sm:gap-3">
             {servicosBrochure.itens.map((item) => (
               <a
                 key={item.id}
@@ -89,7 +88,7 @@ export function ServicosBrochure() {
               <article
                 key={servico.id}
                 id={servico.id}
-                className="relative bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm border border-stone-200/80 hover:shadow-md transition-shadow"
+                className="relative scroll-mt-40 bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm border border-stone-200/80 hover:shadow-md transition-shadow"
               >
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center ${
@@ -207,13 +206,12 @@ export function ServicosBrochure() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-sm hover:shadow-md text-center"
                       >
-                        <PhoneCall className="w-4 h-4" />
                         <span>{servico.botaoTexto}</span>
                         <ArrowRight className="w-4 h-4" />
                       </a>
 
                       <a
-                        href={`https://wa.me/${contato.whatsapp.replace(/\D/g, "")}`}
+                        href={linkWhatsapp}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-4 py-3.5 rounded-xl bg-white border border-stone-300 hover:border-[#596020] text-xs sm:text-sm font-semibold text-[#2B2A28] hover:text-[#596020] transition-colors text-center"
@@ -251,8 +249,7 @@ export function ServicosBrochure() {
             rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-lg"
           >
-            <PhoneCall className="w-5 h-5" />
-            <span>SOLICITAR VISTORIA AGORA</span>
+            <span>Solicitar vistoria</span>
           </a>
         </div>
       </div>
