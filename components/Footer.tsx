@@ -115,7 +115,7 @@ export function Footer() {
         <button
           onClick={scrollToTop}
           aria-label="Voltar ao topo"
-          className="absolute right-4 bottom-4 w-9 h-9 bg-[#E67F12] hover:bg-[#B9650E] text-white flex items-center justify-center transition-colors shadow-lg"
+          className="absolute right-4 bottom-4 w-9 h-9 bg-[#E67F12] hover:bg-[#B9650E] text-white rounded-t flex items-center justify-center transition-colors shadow-lg"
         >
           <ChevronUp className="w-5 h-5" />
         </button>
