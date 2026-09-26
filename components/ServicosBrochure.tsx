@@ -14,7 +14,6 @@ import {
   CheckCircle2,
   AlertTriangle,
   ArrowRight,
-  PhoneCall,
   Sparkles,
 } from "lucide-react";
 
@@ -207,13 +206,12 @@ export function ServicosBrochure() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-sm hover:shadow-md text-center"
                       >
-                        <PhoneCall className="w-4 h-4" />
                         <span>{servico.botaoTexto}</span>
                         <ArrowRight className="w-4 h-4" />
                       </a>
 
                       <a
-                        href={`https://wa.me/${contato.whatsapp.replace(/\D/g, "")}`}
+                        href={linkWhatsapp}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-4 py-3.5 rounded-xl bg-white border border-stone-300 hover:border-[#596020] text-xs sm:text-sm font-semibold text-[#2B2A28] hover:text-[#596020] transition-colors text-center"
@@ -251,7 +249,6 @@ export function ServicosBrochure() {
             rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-lg"
           >
-            <PhoneCall className="w-5 h-5" />
             <span>Solicitar vistoria</span>
           </a>
         </div>
