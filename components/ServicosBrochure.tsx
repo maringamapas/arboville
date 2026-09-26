@@ -60,7 +60,7 @@ export function ServicosBrochure() {
           </p>
 
           {/* Navegação Rápida entre os 6 Serviços */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <div className="mt-8 flex min-h-24 flex-wrap items-center justify-center gap-2 sm:gap-3">
             {servicosBrochure.itens.map((item) => (
               <a
                 key={item.id}
@@ -89,7 +89,7 @@ export function ServicosBrochure() {
               <article
                 key={servico.id}
                 id={servico.id}
-                className="relative bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm border border-stone-200/80 hover:shadow-md transition-shadow"
+                className="relative scroll-mt-40 bg-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-sm border border-stone-200/80 hover:shadow-md transition-shadow"
               >
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center ${
@@ -252,7 +252,7 @@ export function ServicosBrochure() {
             className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E67F12] hover:bg-[#C86109] text-white font-bold text-sm sm:text-base transition-colors shadow-lg"
           >
             <PhoneCall className="w-5 h-5" />
-            <span>SOLICITAR VISTORIA AGORA</span>
+            <span>Solicitar vistoria</span>
           </a>
         </div>
       </div>
