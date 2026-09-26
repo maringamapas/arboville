@@ -328,7 +328,7 @@ export const dadosCliente: DadosCliente = {
         subtitulo: "O manejo de árvores é essencial para garantir a segurança de estruturas e a saúde da vegetação em áreas urbanas, rurais e industriais.",
         descricao: "Nosso serviço de manejo arbóreo atua na gestão integral de espécies, incluindo avaliação técnica de risco, diagnóstico phytossanitário e intervenções preventivas. Trabalhamos em total conformidade com a legislação ambiental para evitar acidentes, quedas de galhos sobre redes elétricas e danos ao patrim��nio.",
         alerta: "Árvores sem acompanhamento técnico representam um risco silencioso e constante. Uma tempestade ou vendaval pode causar acidentes graves e gerar severas responsabilizações civis e criminais. Proteger sua propriedade e as pessoas ao redor é uma necessidade urgente.",
-        botaoTexto: "AGENDAR VISTORIA TÉCNICA IMEDIATA",
+        botaoTexto: "Agendar vistoria",
         mensagemWhatsapp: "Olá! Gostaria de agendar uma vistoria técnica imediata para Manejo de Árvores com a equipe da Arboville.",
         imagemUrl: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80",
         icone: "TreePine",
