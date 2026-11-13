@@ -50,12 +50,21 @@ export function Recursos() {
               key={card.id}
               className="relative overflow-hidden bg-[#596020] text-white p-6 sm:p-8 flex flex-col justify-between items-center text-center min-h-[300px] sm:min-h-[340px] shadow-lg rounded-sm group"
             >
-              {/* Subtle background image texture */}
+              {/* Background image texture */}
               {card.imagemFundo && (
-                <div 
-                  className="absolute inset-0 opacity-15 bg-cover bg-center mix-blend-overlay group-hover:scale-105 transition-transform duration-700"
-                  style={{ backgroundImage: `url(${card.imagemFundo})` }}
-                />
+                <>
+                  <div
+                    className={`absolute inset-0 bg-cover bg-center mix-blend-overlay group-hover:scale-105 transition-transform duration-700 ${card.tipo === "faq" ? "opacity-65" : "opacity-15"}`}
+                    style={{ backgroundImage: `url(${card.imagemFundo})` }}
+                    aria-hidden="true"
+                  />
+                  {card.tipo === "faq" && (
+                    <div
+                      className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/25"
+                      aria-hidden="true"
+                    />
+                  )}
+                </>
               )}
 
               {/* Title on Top */}
