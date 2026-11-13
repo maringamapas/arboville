@@ -455,7 +455,7 @@ export const dadosCliente: DadosCliente = {
         icone: "message-square-more",
         linkTexto: "Consulte nosso guia de dúvidas",
         linkUrl: "#faq",
-        imagemFundo: "https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=800&q=80",
+        imagemFundo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/poda-coqueiro-FP6dVDWrgAO590kUzvJMIiPjUBkJS4.jpg",
       },
       {
         id: "podcast",

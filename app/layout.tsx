@@ -17,6 +17,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.arboville.com.br"),
   title: `${dadosCliente.nome} | ${dadosCliente.slogan}`,
   description: dadosCliente.descricao,
   icons: {
@@ -53,9 +54,39 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const localBusiness = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: dadosCliente.razaoSocial ?? dadosCliente.nome,
+    description: dadosCliente.descricao,
+    url: "https://www.arboville.com.br",
+    image: new URL(dadosCliente.logo.horizontalUrl, "https://www.arboville.com.br").toString(),
+    telephone: `+${dadosCliente.contato.telefone}`,
+    email: dadosCliente.contato.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: dadosCliente.localizacao.endereco,
+      addressLocality: dadosCliente.localizacao.cidade,
+      addressRegion: dadosCliente.localizacao.estado,
+      addressCountry: dadosCliente.localizacao.pais,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: dadosCliente.localizacao.latitude,
+      longitude: dadosCliente.localizacao.longitude,
+    },
+    sameAs: dadosCliente.rodape.redesSociais.map(({ url }) => url),
+  };
+
   return (
     <html lang="pt-BR" className={openSans.variable}>
       <body className={`${openSans.className} min-h-screen bg-[#FAFAF9] text-[#1F2937] antialiased flex flex-col font-sans`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusiness).replace(/</g, "\\u003c"),
+          }}
+        />
         {children}
         <WhatsAppFlutuante />
       </body>

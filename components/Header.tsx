@@ -53,7 +53,6 @@ export function Header() {
                 src={dadosCliente.logo.horizontalUrl}
                 alt={`${dadosCliente.nome} - ${dadosCliente.slogan}`}
                 fill
-                priority
                 className="object-contain object-left"
                 sizes="(max-width: 640px) 240px, (max-width: 768px) 270px, 340px"
               />
@@ -67,7 +66,9 @@ export function Header() {
               onSubmit={executarBusca}
               className="relative flex items-center w-full max-w-xs sm:max-w-3xl"
             >
+              <label htmlFor="busca-desktop" className="sr-only">Pesquisar no site</label>
               <input
+                id="busca-desktop"
                 type="text"
                 value={busca}
                 onChange={(e) => setBusca(e.target.value)}
