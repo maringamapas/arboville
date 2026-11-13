@@ -1,16 +1,11 @@
-"use client";
-
 import Image from "next/image";
+import { BackToTop } from "@/components/BackToTop";
 import Link from "next/link";
-import { ChevronUp, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { dadosCliente } from "@/data/cliente";
 
 export function Footer() {
   const { rodape, logo, contato, localizacao } = dadosCliente;
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <footer className="w-full bg-[#596020] text-white text-xs pt-12">
@@ -19,9 +14,9 @@ export function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 pb-12 border-b border-stone-700/50">
           {rodape.colunas.map((coluna) => (
             <div key={coluna.titulo} className="space-y-3">
-              <h4 className="font-bold text-white text-xs tracking-tight border-b border-stone-600/40 pb-1.5">
+              <h2 className="font-bold text-white text-xs tracking-tight border-b border-stone-600/40 pb-1.5">
                 {coluna.titulo}
-              </h4>
+              </h2>
               <ul className="space-y-2">
                 {coluna.links.map((link) => (
                   <li key={link.titulo}>
@@ -76,11 +71,14 @@ export function Footer() {
               Siga a Arboville
             </span>
             <div className="flex items-center gap-3">
-              <img
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ICA-400-77NOp3ZlNjEZwNdKbplE8y6eKwe2kN.png"
                 alt="Certificação ISA Certified Arborist"
+                width={400}
+                height={627}
                 className="h-16 w-auto object-contain"
                 loading="lazy"
+                unoptimized
               />
               <a
                 href="https://instagram.com"
@@ -120,13 +118,7 @@ export function Footer() {
         </div>
 
         {/* Back to top button positioned on right */}
-        <button
-          onClick={scrollToTop}
-          aria-label="Voltar ao topo"
-          className="absolute right-4 bottom-4 w-9 h-9 bg-[#E67F12] hover:bg-[#B9650E] text-white rounded-t flex items-center justify-center transition-colors shadow-lg"
-        >
-          <ChevronUp className="w-5 h-5" />
-        </button>
+        <BackToTop />
       </div>
     </footer>
   );

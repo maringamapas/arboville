@@ -1,6 +1,4 @@
-"use client";
-
-import React from "react";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import { dadosCliente } from "@/data/cliente";
 import { formatarWhatsapp } from "@/lib/whatsapp";
@@ -18,7 +16,7 @@ import {
 } from "lucide-react";
 
 // Mapeamento de ícones dinâmicos
-const iconesServicos: Record<string, React.ReactNode> = {
+const iconesServicos: Record<string, ReactNode> = {
   TreePine: <Trees className="w-6 h-6 text-white" />,
   Scissors: <Scissors className="w-6 h-6 text-white" />,
   Axe: <Axe className="w-6 h-6 text-white" />,
@@ -116,6 +114,7 @@ export function ServicosBrochure() {
                           fill
                           className="object-cover transition-transform duration-700 hover:scale-105"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
                       </div>

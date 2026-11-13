@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { dadosCliente } from "@/data/cliente";
 
@@ -7,15 +8,16 @@ export function Hero() {
   return (
     <section className="relative w-full min-h-[calc(100svh-88px)] lg:min-h-[calc(100svh-188px)] bg-[#596020] overflow-hidden flex items-center">
       {/* Background Image with overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center sm:bg-[center_top_30%] bg-no-repeat transition-all duration-700"
-        style={{
-          backgroundImage: `url(${hero.imagemFundo})`,
-        }}
-      >
-        {/* Subtle dark gradient overlay for optimal reading and contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/50 sm:bg-black/25" />
-      </div>
+      <Image
+        src={hero.imagemFundo}
+        alt=""
+        fill
+        priority
+        fetchPriority="high"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover object-center sm:object-[center_top_30%]"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/50 sm:bg-black/25" aria-hidden="true" />
 
       {/* Subtle brand geometric accent in corner */}
       <div className="absolute top-0 right-0 w-40 h-40 bg-[#596020]/20 rounded-bl-full pointer-events-none" />
