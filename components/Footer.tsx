@@ -34,10 +34,10 @@ export function Footer() {
         </div>
 
         {/* Brand, Corporate Address & Social Section */}
-        <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center text-center">
+        <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-8 items-start md:items-center justify-items-stretch md:justify-items-center text-left md:text-center">
           {/* Logo & Corporate Address */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <div className="relative h-14 sm:h-16 aspect-[300/72] flex-shrink-0">
+          <div className="w-full flex flex-col items-stretch sm:flex-row sm:items-center gap-16 md:gap-6">
+            <div className="relative mx-auto w-full max-w-[405px] aspect-[300/72] flex-shrink-0 sm:mx-0 sm:w-[300px] sm:max-w-none">
               <Image
                 src="/31c21f57-replacement-image-1.png"
                 alt={`${dadosCliente.nome} - ${logo.subtexto}`}
@@ -47,7 +47,7 @@ export function Footer() {
               />
             </div>
 
-            <div className="text-[11px] text-stone-300 space-y-1 border-l border-stone-700/60 pl-4">
+            <div className="w-full text-left text-[11px] text-stone-300 space-y-1 border-l border-stone-700/60 pl-6">
               <p className="font-bold text-white text-xs whitespace-pre-line">{dadosCliente.nome}</p>
               <p className="text-stone-300 whitespace-pre-line leading-relaxed">
                 {rodape.sobreEmpresa}
@@ -66,7 +66,7 @@ export function Footer() {
           </div>
 
           {/* Social Media Link */}
-          <div className="flex flex-col md:items-end space-y-3">
+          <div className="w-full flex flex-col items-start md:items-end space-y-3">
             <span className="text-xs font-semibold text-white tracking-wide">
               Siga a Arboville
             </span>
